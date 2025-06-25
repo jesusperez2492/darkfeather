@@ -120,19 +120,10 @@ body {
   color: #b0b0b0;
 }
 
-#crowico {
-  width: 90px;
-}
-
 @media (min-width: 768px) {
   .feature-item {
     height: 100%;
   }
-}
-
-footer {
-  background-color: #000000;
-  color: #f5f5f5;
 }
 
 ::-webkit-scrollbar {
@@ -160,109 +151,13 @@ footer {
   filter: grayscale(0);
 }
 
-#security {
-  background-color: #181818;
-  padding: 80px 0;
-}
-
-#security .section-heading {
-  margin-bottom: 50px;
-  color: #888888;
-  text-align: start;
-}
-
-#security .row {
-  margin-bottom: 30px;
-}
-
-#security .col-auto {
-  text-align: start;
-}
-
-#security .col {
-  align-self: start;
-}
-
-#security .text-muted {
-  font-size: 1.2rem;
-  text-align: start;
-  color: #b0b0b0;
-}
-
-#danger {
-  padding-top: 30px;
-}
-
-.button-wrapper {
-  margin-top: 30px;
-}
-
-.button-wrapper .btn {
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  background-color: #222222;
-  border-color: #444444;
-  transition: background 0.3s, color 0.3s;
-}
-
-.button-wrapper .btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(200, 200, 200, 0.08);
-  transition: top 0.3s ease;
-  z-index: -1;
-}
-
-.button-wrapper .btn:hover {
-  background-color: #444444;
-  color: #fff;
-}
-
-.button-wrapper .btn:hover::before {
-  top: 0;
+.animated-text {
+  animation: blackWhiteBlink 1.2s infinite;
 }
 
 @keyframes blackWhiteBlink {
-  0% {
-    color: #fff;
-  }
-  10% {
-    color: #e0e0e0;
-  }
-  20% {
-    color: #bdbdbd;
-  }
-  30% {
-    color: #888;
-  }
-  40% {
-    color: #444;
-  }
-  50% {
-    color: #000;
-  }
-  60% {
-    color: #444;
-  }
-  70% {
-    color: #888;
-  }
-  80% {
-    color: #bdbdbd;
-  }
-  90% {
-    color: #e0e0e0;
-  }
-  100% {
-    color: #fff;
-  }
-}
-
-.animated-text {
-  animation: blackWhiteBlink 1.2s infinite;
+  0%, 100% { color: #fff; }
+  25% { color: #bdbdbd; }
+  50% { color: #000; }
+  75% { color: #bdbdbd; }
 }
